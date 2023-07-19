@@ -12,7 +12,6 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { useState } from "react";
-
 import { consultData } from "../../data/consults";
 const trendData = () => {
   console.log(consultData);
