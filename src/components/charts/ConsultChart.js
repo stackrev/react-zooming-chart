@@ -11,14 +11,16 @@ import {
   ReferenceArea,
   ResponsiveContainer,
 } from "recharts";
+
 import { useState } from "react";
 import { consultData } from "../../data/consults";
+
 const trendData = () => {
-  console.log(consultData);
+  
   const roughton_trend = createTrend(consultData, "id", "roughton");
   const pyle_trend = createTrend(consultData, "id", "pyle");
   const hunter_trend = createTrend(consultData, "id", "hunter");
-  console.log("trend", roughton_trend);
+  
   return consultData.map((item) => {
     return {
       ...item,
